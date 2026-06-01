@@ -18,7 +18,7 @@ public class Incident {
     private String description;
 
     @Column(nullable = false,length = 100)
-    private String requester_name;
+    private String requesterName;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false,length = 20)
@@ -47,7 +47,7 @@ public class Incident {
     ){
         this.title = title;
         this.description = description;
-        this.requester_name = requester_name;
+        this.requesterName = requester_name;
         this.priority = priority;
         this.status = IncidentStatus.OPEN;
         this.created_at = LocalDateTime.now();
@@ -82,7 +82,7 @@ public class Incident {
     }
 
     public String getRequester_name() {
-        return requester_name;
+        return requesterName;
     }
 
     public IncidentPriority getPriority() {
