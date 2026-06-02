@@ -81,7 +81,7 @@ public class Incident {
         return description;
     }
 
-    public String getRequester_name() {
+    public String getRequesterName() {
         return requesterName;
     }
 
@@ -97,15 +97,15 @@ public class Incident {
         return solution;
     }
 
-    public LocalDateTime getCreated_at() {
+    public LocalDateTime getCreatedAt() {
         return created_at;
     }
 
-    public LocalDateTime getUpdated_at() {
+    public LocalDateTime getUpdatedAt() {
         return updated_at;
     }
 
-    public LocalDateTime getClosed_at() {
+    public LocalDateTime getClosedAt() {
         return closed_at;
     }
 }
